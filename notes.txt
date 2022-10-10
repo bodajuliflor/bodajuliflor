@@ -6,3 +6,5 @@ El parallax que se usa es v1.5 la actual es la v3.1
 Revisar todo los elementos en mobile
 
 URL HTML original = https://www.fixdate.io/ar/modelo-invitacion/hojas
+HOST PAGE: https://app.netlify.com/sites/bodajuliflor/overview
+Repository: https://github.com/bodajuliflor/bodajuliflor
