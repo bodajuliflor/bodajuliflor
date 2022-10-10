@@ -1,0 +1,393 @@
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  #modalMusica .modal-content p {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  #modalMusica .modal-content p + span {
+    font-size: 15px;
+  }
+
+  #modalMusica .modal-content .boton {
+    margin-bottom: 15px;
+  }
+
+  .title {
+    font-size: 55px;
+    line-height: 40px;
+    padding: 0 15px;
+  }
+
+  .subtitle {
+    font-size: 19px;
+    padding: 0 15px;
+    margin-top: 25px;
+  }
+
+  section.portada .content-portada h1 {
+    font-size: 100px;
+    line-height: 65px;
+  }
+
+  section.cuenta-regresiva .box-aros {
+    width: 360px;
+    height: 360px;
+  }
+
+  section.portada .box-nombres-fecha-portada h1 span {
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 15px;
+  }
+
+  section.portada .content-portada span.fecha:before {
+    right: -40px;
+  }
+
+  section.portada .content-portada span.fecha:after {
+    left: -40px;
+  }
+
+  section.portada .content-portada {
+    width: 95%;
+  }
+
+  section.portada .content-portada span.fecha {
+    font-size: 25px;
+    margin-bottom: 35px;
+  }
+
+  section.portada {
+    padding-bottom: 70%;
+  }
+
+  section.portada .box-frase-portada p {
+    font-size: 20px;
+  }
+
+  section.portada .box-frase-portada {
+    margin-top: 25px;
+  }
+
+  section.portada::after {
+    bottom: -2%;
+  }
+
+  section.cuenta-regresiva .box-aros .box-circulo span.falta {
+    font-size: 40px;
+    margin-top: 0;
+  }
+
+  section.cuenta-regresiva .reloj-col span.number {
+    font-size: 30px;
+  }
+
+  section.footer h4 {
+    font-size: 65px;
+  }
+
+  section.footer h4 span {
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  section.footer .col-acciones-footer ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  section.cuenta-regresiva .reloj-col span.time {
+    font-size: 18px;
+  }
+
+  section.portada .portada-flor-izq-sup {
+    width: 33%;
+  }
+
+  section.portada img.portada-flor-der-inf {
+    width: 30%;
+  }
+
+  section.cuenta-regresiva .box-aros .box-circulo {
+    padding: 28px 20px;
+    height: 270px;
+    width: 270px;
+    max-width: 350px;
+  }
+
+  section.ceremonia-fiesta .col-ceremonia h3,
+  section.ceremonia-fiesta .col-fiesta h3 {
+    padding: 8px 30px;
+    font-size: 50px;
+  }
+
+  section.ceremonia-fiesta .col-ceremonia .anim-anillos,
+  section.ceremonia-fiesta .anim-fiesta {
+    width: 50%;
+    height: auto;
+  }
+
+  section.portada img.portada-flor-izq-inf {
+    width: 25%;
+    bottom: -25%;
+  }
+
+  section.instagram {
+    padding-top: 35%;
+    padding-bottom: 50%;
+  }
+
+  section.footer {
+    padding-bottom: 20%;
+    padding-top: 30%;
+  }
+
+  section.regalos {
+    padding-top: 90px;
+    padding-bottom: 25%;
+  }
+
+  section.fiesta {
+    padding-bottom: 35%;
+    padding-top: 35%;
+    background-position-y: 50px;
+  }
+
+  section.ceremonia-fiesta {
+    padding-bottom: 35%;
+  }
+
+  section.galeria {
+    padding-top: 70px;
+  }
+
+  #modalMapa .modal-header .modal-title {
+    font-size: 23px;
+  }
+
+  section.portada .portada-flor-der-inf {
+    bottom: 25%;
+    width: 35%;
+  }
+
+  section.portada .portada-flor-izq-inf {
+    bottom: -60%;
+    width: 22%;
+  }
+
+  section.regalos .regalos-flor-der {
+    bottom: 16%;
+    width: 26%;
+  }
+
+  section.ceremonia-fiesta .info-col .info-box a.boton {
+    min-width: 80%;
+  }
+
+  section.ceremonia-fiesta .ceremonia-fiesta-flor-der {
+    width: 30%;
+    bottom: 38%;
+  }
+
+  section.fiesta .fiesta-flor-izq {
+    max-width: 25%;
+    bottom: -30%;
+  }
+
+  section.fiesta:after {
+    bottom: -35px;
+  }
+
+  section.instagram:before {
+    top: -2px;
+  }
+
+  section.instagram .hashtag {
+    font-size: 45px;
+  }
+
+  section.instagram:after {
+    bottom: 0;
+  }
+
+  section.fiesta .item-fiesta a.boton {
+    min-width: 100%;
+  }
+
+  #controlador-musica {
+    top: initial;
+    bottom: 0;
+    right: 0;
+  }
+
+  .music-anim-icon {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+  }
+
+  section.fiesta .item-fiesta .hojas-musica {
+    position: absolute;
+    top: -75px;
+    left: -40px;
+    z-index: -99;
+    width: 132px;
+  }
+
+  section.footer .col-acciones-footer ul li {
+    text-align: center;
+  }
+
+  section.cuenta-regresiva {
+    height: 290px;
+  }
+
+  section.ceremonia-fiesta:after {
+    bottom: -2px;
+  }
+
+  .modal-dialog .white-circle-icon {
+    top: -55px;
+  }
+}
+
+/* Otros */
+@media only screen and (min-width: 750px) {
+  section.ceremonia-fiesta .ceremonia-fiesta-flor-der {
+    width: 16%;
+  }
+}
+
+/* De tablet a Descktop */
+@media only screen and (min-width: 992px) {
+  /* Modal asistencia */
+
+  #modalAsistencia .modal-content {
+    border: none;
+    background: none;
+    text-align: center;
+    max-width: 780px;
+    height: 560px;
+    padding: 8% 20%;
+    background: url("../images/img_modal01.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100px center;
+  }
+
+  #modalAsistencia .modal-body {
+    padding: 1rem 20px;
+  }
+
+  #modalAsistencia .close {
+    top: 10px;
+    right: 55px;
+  }
+
+  /* Modal sugerir cancion */
+
+  #modalSugerirCancion .modal-content {
+    border: none;
+    background: none;
+    text-align: center;
+    max-width: 780px;
+    height: 560px;
+    padding: 8% 20%;
+    background: url("../images/img_modal01.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100px center;
+  }
+
+  #modalSugerirCancion .modal-body {
+    padding: 1rem 1.5rem;
+  }
+
+  #modalSugerirCancion .close {
+    top: 10px;
+    right: 55px;
+  }
+
+  /* Modal vestuario */
+
+  #modalVestuario .modal-content {
+    border: none;
+    background: none;
+    text-align: center;
+    max-width: 780px;
+    height: 560px;
+    padding: 8% 20%;
+    background: url("../images/img_modal01.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100px center;
+  }
+
+  #modalVestuario .modal-body {
+    padding: 1rem 1.5rem;
+  }
+
+  #modalVestuario .close {
+    top: 10px;
+    right: 55px;
+  }
+
+  /* Modal regalos */
+
+  #modalRegalos .modal-content {
+    border: none;
+    background: none;
+    text-align: center;
+    max-width: 780px;
+    height: 560px;
+    padding: 8% 20%;
+    background: url("../images/img_modal01.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100px center;
+  }
+
+  #modalRegalos .modal-body {
+    padding: 1rem 1.5rem;
+  }
+
+  #modalRegalos .close {
+    top: 10px;
+    right: 55px;
+  }
+
+  .content-fotos .shadow-left {
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: 999;
+    height: 150%;
+    width: 6%;
+    background: url("../images/img_sombraGaleria_izq.svg") left center no-repeat;
+    top: -27%;
+  }
+
+  .content-fotos .shadow-right {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    height: 150%;
+    width: 6%;
+    background: url("../images/img_sombraGaleria_der.svg") right center repeat-y;
+    top: -27%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  section.instagram .hashtag {
+    font-size: 35px;
+  }
+}

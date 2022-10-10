@@ -1,0 +1,8 @@
+Ver si hay que cambiar los titulos de los modals, en especial los de Ceremonia y Fiesta
+Probar agendar el evento
+Hacer backend para recibir las asistencias y música sugeridas? O usar un forms / survey
+Revisar urls de las coordenadas de los eventos
+El parallax que se usa es v1.5 la actual es la v3.1
+Revisar todo los elementos en mobile
+
+URL HTML original = https://www.fixdate.io/ar/modelo-invitacion/hojas
