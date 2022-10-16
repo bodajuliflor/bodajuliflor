@@ -62,7 +62,7 @@
 
   section.portada {
     padding-bottom: 70% !important;
-    /* overflow-x: hidden !important; */
+    overflow: hidden !important;
   }
 
   section.portada .box-frase-portada p {
@@ -263,6 +263,10 @@
 
   .modal-dialog .white-circle-icon {
     top: -55px;
+  }
+
+  a.boton.modal-regalos {
+    z-index: 10 !important;
   }
 }
 
