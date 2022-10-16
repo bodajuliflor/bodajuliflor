@@ -50,9 +50,19 @@ windowElement.ready(() => {
 
     callPlayer("musicPlayerIframe", "setVolume", [80]); // Set the video volume to 80%
     $("#play-pause-music").attr("data-estado-music", "play");
+    $("#play-pause-music").attr("data-anim-loop", "true");
+    $("#play-pause-music").css("opacity", "1");
     callPlayer("musicPlayerIframe", "playVideo");
 
     $("#modalMusica").modal("hide");
+  });
+
+  // Btn stop music modal
+  $("body").on("click", "#stop-music-modal", function (e) {
+    e.preventDefault();
+
+    $("#play-pause-music").attr("data-anim-loop", "false");
+    $("#play-pause-music").css("opacity", "0.5");
   });
 });
 
@@ -65,80 +75,16 @@ const playPauseMusic = () => {
   // Pause music
   if (estadoMusic == "pause") {
     playPauseMusicElement.attr("data-estado-music", "play");
+    $("#play-pause-music").attr("data-anim-loop", "true");
+    $("#play-pause-music").css("opacity", "1");
     callPlayer("musicPlayerIframe", "playVideo");
   }
 
   // Play music
   if (estadoMusic == "play") {
     playPauseMusicElement.attr("data-estado-music", "pause");
+    $("#play-pause-music").attr("data-anim-loop", "false");
+    $("#play-pause-music").css("opacity", "0.5");
     callPlayer("musicPlayerIframe", "pauseVideo");
   }
 };
-
-// Musica de fondo
-// const loadPlayer = () => {
-//   function onYouTubeIframeAPIReady() {
-//     player = new YT.Player("player-musica-fondo", {
-//       height: "10",
-//       width: "10",
-//       playerVars: {
-//         playlist: "EH30RAXnRWs",
-//         loop: 1,
-//       },
-//       events: {
-//         onReady: onPlayerReady,
-//       },
-//     });
-//   }
-
-//   // 4. The API will call this function when the video player is ready.
-//   function onPlayerReady(event) {
-//     event.target.setVolume(80);
-//     //event.target.playVideo();
-//   }
-
-//   // Click en controlador musica
-//   $("body").on("click", "#play-pause-music", function (e) {
-//     e.preventDefault();
-
-//     // Estado actual
-//     let estadoMusic = $(this).attr("data-estado-music");
-
-//     // Pause music
-//     if (estadoMusic == "pause") {
-//       $(this).attr("data-estado-music", "play");
-//       //animMusicAnimIcon.play();
-//       //player.playVideo();
-//     }
-
-//     // Play music
-//     if (estadoMusic == "play") {
-//       $(this).attr("data-estado-music", "pause");
-//       //player.pauseVideo();
-//       //animMusicAnimIcon.stop();
-//     }
-//   });
-
-//   window.onYouTubePlayerAPIReady = function () {
-//     onYouTubeIframeAPIReady();
-//   };
-// };
-
-// // Load the IFrame Player API code asynchronously.
-// const loadScript = (callback) => {
-//   if (typeof YT == "undefined" || typeof YT.Player == "undefined") {
-//     let tag = document.createElement("script");
-
-//     // This function creates an <iframe> (and YouTube player)
-//     // after the API code downloads.
-//     tag.src = "https://www.youtube.com/iframe_api";
-//     let firstScriptTag = document.getElementById("player");
-//     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-//   }
-
-//   callback();
-// };
-
-// $(window).ready(() => {
-//   loadScript(loadPlayer);
-// });

@@ -20,6 +20,11 @@
 
 /* Scroll */
 
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -64,30 +69,30 @@
 }
 
 .boton {
-  background: #fff;
-  color: var(--color-2);
-  text-transform: uppercase;
-  font-family: var(--fuente-2);
-  font-weight: 700;
-  border-radius: 50px;
-  line-height: 15px;
-  font-size: 15px;
-  padding: 13px 30px;
+  background: #fff !important;
+  color: var(--color-2) !important;
+  text-transform: uppercase !important;
+  font-family: var(--fuente-2) !important;
+  font-weight: 700 !important;
+  border-radius: 50px !important;
+  line-height: 15px !important;
+  font-size: 15px !important;
+  padding: 13px 30px !important;
 
-  -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.4) !important;
+  -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.4) !important;
 
-  -webkit-transition: all 0.5s 0s ease;
-  -moz-transition: all 0.5s 0s ease;
-  -o-transition: all 0.5s 0s ease;
-  transition: all 0.5s 0s ease;
+  -webkit-transition: all 0.5s 0s ease !important;
+  -moz-transition: all 0.5s 0s ease !important;
+  -o-transition: all 0.5s 0s ease !important;
+  transition: all 0.5s 0s ease !important;
 }
 
 .boton:hover {
-  background: var(--color-2);
-  color: #fff;
-  text-decoration: none;
+  background: var(--color-2) !important;
+  color: #fff !important;
+  text-decoration: none !important;
 }
 
 .title {
@@ -160,47 +165,6 @@ a {
 
 .modal-transparent .boton {
   padding: 15px 50px;
-}
-
-/* Cambio de idiomas / paises */
-
-.flags-laguages {
-  padding: 30px;
-}
-
-.flags-laguages li a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  margin: 10px 8px;
-  opacity: 0.75;
-  border: 2px solid #fff;
-}
-
-.flags-laguages li a:hover {
-  opacity: 1;
-}
-
-.flags-laguages a.reset-lang {
-  width: 100%;
-  text-align: center;
-  color: #fff;
-  display: inline-block;
-  font-size: 14px;
-  margin-top: 30px;
-}
-
-.flags-laguages a.reset-lang:hover {
-  text-decoration: underline;
-}
-
-.flags-laguages a.reset-lang img {
-  width: 22px;
-  height: auto;
-  margin-right: 5px;
 }
 
 /* Loader */
@@ -341,28 +305,28 @@ section.portada .box-frase-portada p img {
 
 section.portada .portada-flor-izq-sup {
   position: absolute;
-  top: -30px;
-  left: 0;
-  width: 15%;
+  /* top: -30px; */
+  left: -280px;
+  width: 45%;
 }
 
 section.portada .portada-flor-der-inf {
   position: absolute;
   bottom: 30%;
-  right: 0;
-  width: 20%;
+  right: -55px;
+  width: 26%;
 }
 
 section.portada .portada-flor-izq-inf {
   position: absolute;
   bottom: -38%;
-  left: 0;
-  width: 14%;
+  left: -345px;
+  width: 50%;
   z-index: 999;
 }
 
 section.portada .flecha-continuar {
-  width: 50px;
+  width: 75px;
   position: absolute;
   bottom: -15%;
 }
@@ -601,8 +565,8 @@ section.ceremonia-fiesta:after {
 section.ceremonia-fiesta .ceremonia-fiesta-flor-der {
   position: absolute;
   bottom: 20%;
-  right: 0;
-  width: 13%;
+  right: -419px;
+  width: 60%;
 }
 
 section.ceremonia-fiesta .ondas-2 {
@@ -630,7 +594,7 @@ section.galeria {
 }
 
 section.galeria .anim-galeria {
-  width: 70px;
+  width: 150px;
   margin: 0 auto;
 }
 
@@ -683,7 +647,7 @@ section.galeria .slick-center .polaroid {
 }
 
 section.galeria .slick-dots li button:before {
-  font-size: 45px !important;
+  font-size: 20px !important;
   color: var(--color-1) !important;
   opacity: 0.6;
 }
@@ -717,16 +681,13 @@ section.fiesta .container {
 }
 
 section.fiesta .anim-musica {
-  width: 75px;
+  width: 150px;
   margin: 15px auto 40px auto;
 }
 
 section.fiesta .anim-vestuario {
   width: 95px;
-}
-
-section.fiesta .anim-tips {
-  width: 55px;
+  margin: 15px auto 40px auto;
 }
 
 section.fiesta:after {
@@ -799,15 +760,15 @@ section.regalos {
 }
 
 section.regalos .anim-regalos {
-  width: 70px;
+  width: 150px;
   margin: 1px auto 40px;
 }
 
 section.regalos .regalos-flor-der {
   position: absolute;
   bottom: 20%;
-  right: 0;
-  width: 15%;
+  right: -362px;
+  width: 52%;
 }
 
 /* ---------- */
@@ -857,7 +818,7 @@ section.instagram .hashtag {
 }
 
 section.instagram .anim-instagram {
-  width: 60px;
+  width: 150px;
   margin: 0 auto 15px;
 }
 
@@ -934,14 +895,22 @@ section.footer .col-acciones-footer ul a:hover {
   text-decoration: none;
 }
 
+section.footer .addeventatc {
+  background-color: var(--color-4) !important;
+  padding: 0 !important;
+  border: 0 !important;
+  z-index: 0 !important;
+  box-shadow: 0px 0px 0px 0px !important;
+}
+
 section.footer .addeventatc span.nameBtn {
   color: var(--color-2) !important;
-  font-weight: 500;
+  font-weight: 500 !important;
 
-  -webkit-transition: all 0.5s 0s ease;
-  -moz-transition: all 0.5s 0s ease;
-  -o-transition: all 0.5s 0s ease;
-  transition: all 0.5s 0s ease;
+  -webkit-transition: all 0.5s 0s ease !important;
+  -moz-transition: all 0.5s 0s ease !important;
+  -o-transition: all 0.5s 0s ease !important;
+  transition: all 0.5s 0s ease !important;
 }
 
 section.footer .addeventatc span.nameBtn:hover {

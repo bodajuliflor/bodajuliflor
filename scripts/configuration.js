@@ -33,26 +33,36 @@ if (
   device = "desktop";
 }
 
-// Portada parallax
-if (device == "mobile" || $(window).width() < 768) {
-  // Aceptar webp?
-  if (support_format_webp()) {
-    var imageParallax = "./assest/images/portada-mobile.webp";
-  } else {
-    var imageParallax = "./assets/images/portada-mobile.jpg";
-  }
-} else {
-  // Aceptar webp?
-  if (support_format_webp()) {
-    var imageParallax = "./assets/images/portada-3.webp";
-  } else {
-    var imageParallax = "./assets/images/portada-3.jpg";
-  }
-}
-
 windowElement.ready(() => {
+  // Portada parallax
+  let imagePortadaParallax;
+  let imageInstagramParallax;
+  if (device == "mobile" || $(window).width() < 768) {
+    // Aceptar webp?
+    if (support_format_webp()) {
+      imagePortadaParallax = "./assest/images/portada-mobile.webp";
+      imageInstagramParallax = "./assets/images/instagram_mobile.webp";
+    } else {
+      imagePortadaParallax = "./assets/images/portada-mobile.jpg";
+      imageInstagramParallax = "./assets/images/instagram_mobile.jpg";
+    }
+  } else {
+    // Aceptar webp?
+    if (support_format_webp()) {
+      imagePortadaParallax = "./assets/images/portada-3.webp";
+      imageInstagramParallax = "./assets/images/instagram.webp";
+    } else {
+      imagePortadaParallax = "./assets/images/portada-3.jpg";
+      imageInstagramParallax = "./assets/images/instagram.jpg";
+    }
+  }
+
   $(".portada").parallax({
-    imageSrc: imageParallax,
+    imageSrc: imagePortadaParallax,
+  });
+
+  $(".instagram").parallax({
+    imageSrc: imageInstagramParallax,
   });
 });
 

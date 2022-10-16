@@ -86,13 +86,13 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
-  <!-- <script 
-    src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" 
-    integrity="sha512-/6TZODGjYL7M8qb7P6SflJB/nTGE79ed1RfJk3dfm/Ib6JwCT4+tOfrrseEHhxkIhwG8jCl+io6eaiWLS/UX1w==" 
-    crossorigin="anonymous" 
+  <!-- <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"
+    integrity="sha512-/6TZODGjYL7M8qb7P6SflJB/nTGE79ed1RfJk3dfm/Ib6JwCT4+tOfrrseEHhxkIhwG8jCl+io6eaiWLS/UX1w=="
+    crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script> -->
-  <script type="text/javascript" src="./assets/parallax.min.js"></script>
+  <script type="text/javascript" src="./scripts/parallax.min.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
     integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
@@ -123,60 +123,6 @@
 <body onload="handlePageLoaded()">
   <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
   <div id="musicPlayerContainer"></div>
-
-  <!-- Imagenes de fondo -->
-  <div
-    class="parallax-mirror"
-    style="
-      visibility: visible;
-      z-index: -100;
-      position: fixed;
-      top: 0px;
-      left: 0px;
-      overflow: hidden;
-      transform: translate3d(0px, 0px, 0px);
-      height: 996px;
-      width: 1920px;
-    "
-  >
-    <img
-      class="parallax-slider"
-      src="./assets/images/portada-3.webp"
-      style="
-        transform: translate3d(0px, -196px, 0px);
-        position: absolute;
-        height: 1080px;
-        width: 1920px;
-        max-width: none;
-      "
-    />
-  </div>
-  <div
-    class="parallax-mirror"
-    style="
-      visibility: hidden;
-      z-index: -100;
-      position: fixed;
-      top: 0px;
-      left: 0px;
-      overflow: hidden;
-      height: 992.7px;
-      width: 1920px;
-      transform: translate3d(0px, 517.967px, 0px);
-    "
-  >
-    <img
-      class="parallax-slider"
-      src="./assets/images/instagram.webp"
-      style="
-        position: absolute;
-        height: 995px;
-        width: 1920px;
-        max-width: none;
-        transform: translate3d(0px, -567.373px, 0px);
-      "
-    />
-  </div>
 
   <!-- Loader -->
   <div class="preloader-area">
@@ -211,6 +157,7 @@
           >
           <a
             class="boton"
+            id="stop-music-modal"
             data-dismiss="modal"
             aria-label="Close"
             id=""
@@ -261,7 +208,7 @@
             <p>
               <img src="./assets/images/comilla-apertura.svg" alt="" />
               <br />
-              Nos casamos y queremos compartir <br /> 
+              Nos casamos y queremos compartir <br />
               con vos este momento. <br />
               <img src="./assets/images/comilla-cierre.svg" alt="" />
             </p>
@@ -345,7 +292,7 @@
               <p>Viernes 20 de Enero - 10hs</p>
               <a
                 href="#"
-                class="boton addeventatc"
+                class="addeventatc boton"
                 id="addeventatc1"
                 title=""
                 style="visibility: visible"
@@ -447,11 +394,12 @@
                 class="boton confirmar-asistencia"
                 >Confirmar asistencia</a
               > -->
-              <a 
-                href="https://forms.gle/r9ccgxbB8eXNcJcA6" 
+              <a
+                href="https://forms.gle/r9ccgxbB8eXNcJcA6"
                 class="boton confirmar-asistencia"
                 target="_blank"
-              >Confirmar asistencia</a>
+                >Confirmar asistencia</a
+              >
             </div>
 
             <div class="info-box">
@@ -554,7 +502,12 @@
             <p>
               Cual es la canción que no debe faltar en la playlist de la fiesta?
             </p>
-            <a href="https://forms.gle/7jbFr8c4tzTdiij17" class="boton sugerir-cancion" target="_blank">Sugerir canción</a>
+            <a
+              href="https://forms.gle/7jbFr8c4tzTdiij17"
+              class="boton sugerir-cancion"
+              target="_blank"
+              >Sugerir canción</a
+            >
           </div>
         </div>
 
@@ -567,17 +520,16 @@
             <div
               class="d-flex justify-content-center align-items-center content-anim-fiesta"
             >
-              <div class="anim-vestuario"></div>
-              <div
-                class="lottie anim-vestuario"
-                data-animation-path="./assets/animation-data/vestuario.json"
-                data-anim-loop="true"
-                data-name="anim-vestuario"
-              ></div>
+              <div class="anim-vestuario">
+                <div
+                  class="lottie anim-vestuario"
+                  data-animation-path="./assets/animation-data/vestuario.json"
+                  data-anim-loop="true"
+                  data-name="anim-vestuario"
+                ></div>
+              </div>
             </div>
-            <p>
-              Elegante
-            </p>
+            <p>Elegante</p>
           </div>
         </div>
       </div>
@@ -586,11 +538,20 @@
 
   <!-- Regalos -->
   <section class="regalos">
+    <div
+      class="lottie regalos-flor-der"
+      data-animation-path="./assets/animation-data/json_hojas04.json"
+      data-anim-loop="false"
+      data-name="regalos-flor-der"
+    ></div>
     <div class="container">
       <div
         class="row text-center d-flex justify-content-center align-items-center"
       >
-        <h2 class="title" style="font-family: 'Sacramento', cursive">
+        <h2
+          class="title"
+          style="font-family: 'Sacramento', cursive; padding-bottom: 3%"
+        >
           Regalos
         </h2>
         <p class="subtitle">
@@ -640,7 +601,10 @@
           ></div>
         </div>
         <br />
-        <a target="_blank" href="https://drive.google.com/drive/folders/1UAyvrWjmRhX9P9KzNH3P-3YYEuQACrfc?usp=sharing" class="boton"
+        <a
+          target="_blank"
+          href="https://drive.google.com/drive/folders/1UAyvrWjmRhX9P9KzNH3P-3YYEuQACrfc?usp=sharing"
+          class="boton"
           >Accedé a Google Drive</a
         >
       </div>
@@ -663,13 +627,22 @@
         >
           <ul>
             <li>
-              <a href="https://forms.gle/r9ccgxbB8eXNcJcA6" data-evento="Fiesta" class="confirmar-asistencia" target="_blank"
+              <a
+                href="https://forms.gle/r9ccgxbB8eXNcJcA6"
+                data-evento="Fiesta"
+                class="confirmar-asistencia"
+                target="_blank"
                 >Confirmar asistencia a ceremonia y fiesta</a
               >
             </li>
 
             <li>
-              <a href="https://forms.gle/7jbFr8c4tzTdiij17" class="sugerir-cancion" target="_blank">Sugerir canción</a>
+              <a
+                href="https://forms.gle/7jbFr8c4tzTdiij17"
+                class="sugerir-cancion"
+                target="_blank"
+                >Sugerir canción</a
+              >
             </li>
 
             <li>
@@ -741,7 +714,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <p>Desarrollado con <span class="heart">🧡</span> por Maru y Sebas</p>
+          <p>Desarrollado con <span class="heart">🧡</span></p>
         </div>
       </div>
     </div>
@@ -1005,17 +978,13 @@
           <h5 class="modal-title">Regalos</h5>
         </div>
         <div class="modal-body">
-          <p class="datos-bancarios" style="text-align: left">
-            Caja de ahorro en <strong> PESOS (ARS)</strong> <br />Banco Galicia
-            <br />FLORENCIA GABRIELA LISSERI <br />CTA: 4036316-2 064-1
-            <br />CBU: 0070064130004036316217 <br />ALIAS: bodajuliflor
-            <br />CUIL: 27-38324054-4
-          </p>
+          Caja de ahorro en <strong> PESOS (ARS)</strong> <br />Banco Galicia
+          <br />FLORENCIA GABRIELA LISSERI <br />CTA: 4036316-2 064-1 <br />CBU:
+          0070064130004036316217 <br />ALIAS: bodajuliflor <br />CUIL:
+          27-38324054-4
         </div>
         <div class="modal-footer">
-          <a class="boton copyCBU" target="_blank" href="#">
-            Copiar CBU
-          </a>
+          <a class="boton copyCBU" target="_blank" href="#"> Copiar CBU </a>
         </div>
       </div>
     </div>
