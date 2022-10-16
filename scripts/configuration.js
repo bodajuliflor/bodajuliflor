@@ -40,7 +40,7 @@ windowElement.ready(() => {
   if (device == "mobile" || $(window).width() < 768) {
     // Aceptar webp?
     if (support_format_webp()) {
-      imagePortadaParallax = "./assest/images/portada-mobile.webp";
+      imagePortadaParallax = "./assets/images/portada-3.webp";
       imageInstagramParallax = "./assets/images/instagram_mobile.webp";
     } else {
       imagePortadaParallax = "./assets/images/portada-mobile.jpg";

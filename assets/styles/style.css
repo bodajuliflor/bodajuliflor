@@ -305,22 +305,21 @@ section.portada .box-frase-portada p img {
 
 section.portada .portada-flor-izq-sup {
   position: absolute;
-  /* top: -30px; */
-  left: -280px;
+  left: -15%;
   width: 45%;
 }
 
 section.portada .portada-flor-der-inf {
   position: absolute;
   bottom: 30%;
-  right: -55px;
+  right: -3%;
   width: 26%;
 }
 
 section.portada .portada-flor-izq-inf {
   position: absolute;
   bottom: -38%;
-  left: -345px;
+  left: -18%;
   width: 50%;
   z-index: 999;
 }
@@ -565,7 +564,7 @@ section.ceremonia-fiesta:after {
 section.ceremonia-fiesta .ceremonia-fiesta-flor-der {
   position: absolute;
   bottom: 20%;
-  right: -419px;
+  right: -22%;
   width: 60%;
 }
 
@@ -767,7 +766,7 @@ section.regalos .anim-regalos {
 section.regalos .regalos-flor-der {
   position: absolute;
   bottom: 20%;
-  right: -362px;
+  right: -19%;
   width: 52%;
 }
 

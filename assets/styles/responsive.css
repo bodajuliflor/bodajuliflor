@@ -1,88 +1,89 @@
 /* Mobile */
 @media only screen and (max-width: 767px) {
   #modalMusica .modal-content p {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 40px !important;
+    line-height: 40px !important;
   }
 
   #modalMusica .modal-content p + span {
-    font-size: 15px;
+    font-size: 15px !important;
   }
 
   #modalMusica .modal-content .boton {
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
   }
 
   .title {
-    font-size: 55px;
-    line-height: 40px;
-    padding: 0 15px;
+    font-size: 55px !important;
+    line-height: 40px !important;
+    padding: 0 15px !important;
   }
 
   .subtitle {
-    font-size: 19px;
-    padding: 0 15px;
-    margin-top: 25px;
+    font-size: 19px !important;
+    padding: 0 15px !important;
+    margin-top: 25px !important;
   }
 
   section.portada .content-portada h1 {
-    font-size: 100px;
-    line-height: 65px;
+    font-size: 100px !important;
+    line-height: 65px !important;
   }
 
   section.cuenta-regresiva .box-aros {
-    width: 360px;
-    height: 360px;
+    width: 360px !important;
+    height: 360px !important;
   }
 
   section.portada .box-nombres-fecha-portada h1 span {
-    font-size: 40px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    margin-bottom: 15px;
+    font-size: 40px !important;
+    width: 50px !important;
+    height: 50px !important;
+    line-height: 50px !important;
+    margin-bottom: 15px !important;
   }
 
   section.portada .content-portada span.fecha:before {
-    right: -40px;
+    right: -40px !important;
   }
 
   section.portada .content-portada span.fecha:after {
-    left: -40px;
+    left: -40px !important;
   }
 
   section.portada .content-portada {
-    width: 95%;
+    width: 95% !important;
   }
 
   section.portada .content-portada span.fecha {
-    font-size: 25px;
-    margin-bottom: 35px;
+    font-size: 25px !important;
+    margin-bottom: 35px !important;
   }
 
   section.portada {
-    padding-bottom: 70%;
+    padding-bottom: 70% !important;
+    /* overflow-x: hidden !important; */
   }
 
   section.portada .box-frase-portada p {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 
   section.portada .box-frase-portada {
-    margin-top: 25px;
+    margin-top: 25px !important;
   }
 
   section.portada::after {
-    bottom: -2%;
+    bottom: -2% !important;
   }
 
   section.cuenta-regresiva .box-aros .box-circulo span.falta {
-    font-size: 40px;
-    margin-top: 0;
+    font-size: 40px !important;
+    margin-top: 0 !important;
   }
 
   section.cuenta-regresiva .reloj-col span.number {
-    font-size: 30px;
+    font-size: 30px !important;
   }
 
   section.footer h4 {
@@ -104,22 +105,23 @@
   }
 
   section.cuenta-regresiva .reloj-col span.time {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 
   section.portada .portada-flor-izq-sup {
-    width: 33%;
-  }
-
-  section.portada img.portada-flor-der-inf {
-    width: 30%;
+    left: -33% !important;
+    width: 100% !important;
   }
 
   section.cuenta-regresiva .box-aros .box-circulo {
-    padding: 28px 20px;
-    height: 270px;
-    width: 270px;
-    max-width: 350px;
+    padding: 28px 20px !important;
+    height: 270px !important;
+    width: 270px !important;
+    max-width: 350px !important;
+  }
+
+  section.ceremonia-fiesta .row {
+    padding-top: 10px !important;
   }
 
   section.ceremonia-fiesta .col-ceremonia h3,
@@ -150,8 +152,9 @@
   }
 
   section.regalos {
-    padding-top: 90px;
-    padding-bottom: 25%;
+    padding-top: 25% !important;
+    padding-bottom: 25% !important;
+    overflow-x: hidden !important;
   }
 
   section.fiesta {
@@ -161,7 +164,8 @@
   }
 
   section.ceremonia-fiesta {
-    padding-bottom: 35%;
+    padding-bottom: 35% !important;
+    overflow-x: hidden !important;
   }
 
   section.galeria {
@@ -173,18 +177,21 @@
   }
 
   section.portada .portada-flor-der-inf {
-    bottom: 25%;
-    width: 35%;
+    bottom: 25% !important;
+    right: -4% !important;
+    width: 45% !important;
   }
 
   section.portada .portada-flor-izq-inf {
-    bottom: -60%;
-    width: 22%;
+    bottom: -59% !important;
+    left: -33% !important;
+    width: 91% !important;
   }
 
   section.regalos .regalos-flor-der {
-    bottom: 16%;
-    width: 26%;
+    bottom: 5% !important;
+    right: -32% !important;
+    width: 89% !important;
   }
 
   section.ceremonia-fiesta .info-col .info-box a.boton {
@@ -192,8 +199,9 @@
   }
 
   section.ceremonia-fiesta .ceremonia-fiesta-flor-der {
-    width: 30%;
-    bottom: 38%;
+    width: 80% !important;
+    right: -29% !important;
+    bottom: 41% !important;
   }
 
   section.fiesta .fiesta-flor-izq {
@@ -222,15 +230,15 @@
   }
 
   #controlador-musica {
-    top: initial;
-    bottom: 0;
-    right: 0;
+    position: fixed !important;
+    right: 0 !important;
+    top: 92% !important;
   }
 
   .music-anim-icon {
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
+    width: 80px !important;
+    height: 80px !important;
+    cursor: pointer !important;
   }
 
   section.fiesta .item-fiesta .hojas-musica {
@@ -246,7 +254,7 @@
   }
 
   section.cuenta-regresiva {
-    height: 290px;
+    height: 290px !important;
   }
 
   section.ceremonia-fiesta:after {
@@ -267,100 +275,28 @@
 
 /* De tablet a Descktop */
 @media only screen and (min-width: 992px) {
-  /* Modal asistencia */
-
-  #modalAsistencia .modal-content {
-    border: none;
-    background: none;
-    text-align: center;
-    max-width: 780px;
-    height: 560px;
-    padding: 8% 20%;
-    background: url("../images/img_modal01.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 100px center;
-  }
-
-  #modalAsistencia .modal-body {
-    padding: 1rem 20px;
-  }
-
-  #modalAsistencia .close {
-    top: 10px;
-    right: 55px;
-  }
-
-  /* Modal sugerir cancion */
-
-  #modalSugerirCancion .modal-content {
-    border: none;
-    background: none;
-    text-align: center;
-    max-width: 780px;
-    height: 560px;
-    padding: 8% 20%;
-    background: url("../images/img_modal01.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 100px center;
-  }
-
-  #modalSugerirCancion .modal-body {
-    padding: 1rem 1.5rem;
-  }
-
-  #modalSugerirCancion .close {
-    top: 10px;
-    right: 55px;
-  }
-
-  /* Modal vestuario */
-
-  #modalVestuario .modal-content {
-    border: none;
-    background: none;
-    text-align: center;
-    max-width: 780px;
-    height: 560px;
-    padding: 8% 20%;
-    background: url("../images/img_modal01.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 100px center;
-  }
-
-  #modalVestuario .modal-body {
-    padding: 1rem 1.5rem;
-  }
-
-  #modalVestuario .close {
-    top: 10px;
-    right: 55px;
-  }
-
   /* Modal regalos */
 
   #modalRegalos .modal-content {
-    border: none;
-    background: none;
-    text-align: center;
-    max-width: 780px;
-    height: 560px;
-    padding: 8% 20%;
-    background: url("../images/img_modal01.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 100px center;
+    border: none !important;
+    background: none !important;
+    text-align: center !important;
+    max-width: 780px !important;
+    height: 560px !important;
+    padding: 8% 20% !important;
+    background: url("../images/img_modal01.svg") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: 100px center !important;
   }
 
   #modalRegalos .modal-body {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem !important;
   }
 
   #modalRegalos .close {
-    top: 10px;
-    right: 55px;
+    top: 10px !important;
+    right: 55px !important;
   }
 
   .content-fotos .shadow-left {
