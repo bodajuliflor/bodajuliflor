@@ -21,6 +21,7 @@ const urlCivil = "https://goo.gl/maps/ro4qbym4ux2Jrcqr9"; // TODO: Change this
 let device = "desktop";
 
 const CBUvalue = "0070064130004036316217";
+const albumCode = "AR374a4173";
 
 // Consulto tipo de dispositivo
 if (

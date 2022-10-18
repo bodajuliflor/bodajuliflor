@@ -116,6 +116,7 @@
     <script src="./scripts/modals/music.js"></script>
     <script src="./scripts/modals/regalos.js"></script>
     <script src="./scripts/modals/comoLlegar.js"></script>
+    <script src="./scripts/modals/compartirFotos.js"></script>
     <script src="./scripts/copyClipboard.js"></script>
   </head>
   <body onload="handlePageLoaded()">
@@ -658,10 +659,11 @@
           <br />
           <a
             target="_blank"
-            href="https://drive.google.com/drive/folders/1UAyvrWjmRhX9P9KzNH3P-3YYEuQACrfc?usp=sharing"
+            href="https://www.wedshoots.com/ar?albumId=AR374a4173"
             class="boton"
-            >Accedé a Google Drive</a
+            >Accedé a WedShoots</a
           >
+          <a href="#" class="boton modal-fotos">Ver codigo QR</a>
         </div>
       </div>
     </section>
@@ -834,6 +836,50 @@
           </div>
           <div class="modal-footer">
             <a class="boton copyCBU" target="_blank" href="#"> Copiar CBU </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Fotos -->
+    <div
+      id="modalFotos"
+      class="modal fade"
+      tabindex="-1"
+      style="display: none"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div
+            class="img-top-modal d-flex justify-content-center align-items-start"
+          >
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+            <div class="white-circle-icon">
+              <img class="" src="./assets/images/icons8-camera-50.png" alt="" />
+            </div>
+          </div>
+          <div class="modal-header">
+            <h5 class="modal-title">Compartí tus fotos</h5>
+          </div>
+          <div class="modal-body">
+            <img src="./assets/images/wedShoots-invite.jpg" />
+            <br />
+            Escanear código QR desde la APP o <br />
+            ingresar el siguiente código
+            <strong> AR374a4173 </strong>
+          </div>
+          <div class="modal-footer">
+            <a class="boton copyAlbumCode" target="_blank" href="#">
+              Copiar código del álbum
+            </a>
           </div>
         </div>
       </div>

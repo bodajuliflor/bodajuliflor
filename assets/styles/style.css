@@ -834,6 +834,10 @@ section.instagram:after {
   z-index: 99;
 }
 
+section.instagram a {
+  margin: 5px 3px !important;
+}
+
 /* ---------- */
 
 /* Footer */
@@ -1402,6 +1406,94 @@ footer p a:hover {
 }
 
 #modalRegalos .close span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------- */
+
+/* Modal Fotos */
+
+#modalFotos .modal-content {
+  text-align: center;
+  border: none;
+  padding-bottom: 20px;
+}
+
+#modalFotos .modal-header {
+  border: none;
+  display: inline-block;
+  padding: 0;
+}
+
+#modalFotos .modal-header .modal-title {
+  font-size: 25px;
+}
+
+#modalFotos .modal-footer {
+  border: none;
+  display: inline-block;
+  padding: 0;
+}
+
+#modalFotos .img-top-modal {
+  position: relative;
+  height: 90px;
+}
+
+#modalFotos .img-top-modal img {
+  width: 75%;
+  margin-top: 0;
+}
+
+#modalFotos .img-top-modal {
+  height: 60px !important;
+}
+
+#modalFotos .img-top-modal img {
+  width: 80% !important;
+  margin-top: 7px !important;
+}
+
+#modalFotos .modal-body img {
+  width: 200px;
+  height: 200px;
+}
+
+#modalFotos .close {
+  position: absolute;
+  top: -15px;
+  right: 0;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: var(--color-2);
+  opacity: 1;
+  outline: none;
+  font-size: 34px;
+  font-weight: normal;
+  font-family: var(--fuente-2);
+  font-weight: 300;
+
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.5);
+
+  -webkit-transition: all 0.5s 0s ease;
+  -moz-transition: all 0.5s 0s ease;
+  -o-transition: all 0.5s 0s ease;
+  transition: all 0.5s 0s ease;
+}
+
+#modalFotos .close:hover {
+  background-color: white;
+  color: var(--color-2);
+}
+
+#modalFotos .close span {
   display: inline-block;
   width: 100%;
   height: 100%;

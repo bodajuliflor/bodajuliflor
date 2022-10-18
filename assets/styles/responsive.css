@@ -303,6 +303,30 @@
     right: 55px !important;
   }
 
+  /* Modal fotos */
+
+  #modalFotos .modal-content {
+    border: none !important;
+    background: none !important;
+    text-align: center !important;
+    max-width: 780px !important;
+    height: 560px !important;
+    padding: 8% 20% !important;
+    background: url("../images/img_modal01.svg") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: 100px center !important;
+  }
+
+  #modalFotos .modal-body {
+    padding: 1rem 1.5rem !important;
+  }
+
+  #modalFotos .close {
+    top: 10px !important;
+    right: 55px !important;
+  }
+
   .content-fotos .shadow-left {
     display: block;
     position: absolute;
