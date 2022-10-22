@@ -12,6 +12,7 @@ windowElement.ready(() => {
     $("#play-pause-music").attr("data-estado-music", "play");
     $("#play-pause-music").css("opacity", "1");
     player.playVideo();
+    alert("Iniciar musica");
 
     $("#modalMusica").modal("hide");
   });
@@ -36,6 +37,7 @@ const playPauseMusic = () => {
     playPauseMusicElement.attr("data-estado-music", "play");
     $("#play-pause-music").css("opacity", "1");
     player.playVideo();
+    alert("Iniciar musica");
   }
 
   // Play music
@@ -43,5 +45,6 @@ const playPauseMusic = () => {
     playPauseMusicElement.attr("data-estado-music", "pause");
     $("#play-pause-music").css("opacity", "0.5");
     player.pauseVideo();
+    alert("Pausar musica");
   }
 };
