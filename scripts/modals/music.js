@@ -8,6 +8,7 @@ windowElement.ready(() => {
   $("body").on("click", "#play-music-modal", function (e) {
     e.preventDefault();
 
+    player.setPlaybackQuality("small");
     player.setVolume(80);
     $("#play-pause-music").attr("data-estado-music", "play");
     $("#play-pause-music").css("opacity", "1");

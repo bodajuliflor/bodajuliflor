@@ -943,9 +943,7 @@ section.footer .addeventatc span.nameBtn:hover {
 }
 
 #musicPlayerContainer {
-  visibility: hidden;
-  height: 0;
-  width: 0;
+  display: none;
 }
 
 /* ---------- */
