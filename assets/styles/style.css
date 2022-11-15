@@ -869,7 +869,7 @@ section.footer h4 span {
   height: 40px;
   line-height: 42px;
   font-size: 28px;
-  font-family: "Libre Baskerville", serif;
+  font-family: var(--fuente-1);
 }
 
 section.footer .col-acciones-footer ul {
