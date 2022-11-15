@@ -30,8 +30,8 @@ windowElement.ready(() => {
 
     if (evento == "Ceremonia") {
       titleModalMapa = lang_titleModalMapaCeremonia;
-      urlMap = urlCeremoniaFiesta; // TODO: Change this
-      mapElement.src = embeddedUrlCivil; // TODO: Change this
+      urlMap = urlCivil;
+      mapElement.src = embeddedUrlCivil;
     }
 
     $("#googleMap").append(mapElement);
@@ -40,7 +40,7 @@ windowElement.ready(() => {
     $("#modalMapa .modal-title").text(titleModalMapa);
 
     // Genero el link para ampliar mapa
-    $(".ampliar-mapa").attr("href", urlCeremoniaFiesta);
+    $(".ampliar-mapa").attr("href", urlMap);
 
     $("#modalMapa").modal({
       backdrop: "static",
