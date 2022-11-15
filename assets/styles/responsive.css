@@ -25,6 +25,10 @@
     margin-top: 25px !important;
   }
 
+  section.portada .container {
+    margin-top: -20%;
+  }
+
   section.portada .content-portada h1 {
     font-size: 100px !important;
     line-height: 65px !important;
