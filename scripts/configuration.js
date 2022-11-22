@@ -15,8 +15,8 @@ const embeddedUrlCeremoniaFiesta =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.150211868588!2d-58.176657368466465!3d-34.90267971813002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2d9edd7d22de1%3A0x37deb356ccd9235!2sFinca%20Sol%20y%20Luna!5e0!3m2!1ses-419!2sar!4v1663597993794!5m2!1ses-419!2sar";
 const urlCeremoniaFiesta = "https://goo.gl/maps/ro4qbym4ux2Jrcqr9";
 const embeddedUrlCivil =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.034766744432!2d-58.3569582!3d-34.62856169999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334c73fe3e107%3A0xeae5d0a098ae5c1!2sUsina%20del%20Arte!5e0!3m2!1ses-419!2sar!4v1668555451351!5m2!1ses-419!2sar";
-const urlCivil = "https://maps.app.goo.gl/gEoGp9taoWgjKm2t5?g_st=iw";
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.0425945694637!2d-58.359381084739766!3d-34.62836388045311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334c73fe644e3%3A0xdb419eefad15420f!2sAv.%20Don%20Pedro%20de%20Mendoza%20501%2C%20C1156ACF%20CABA!5e0!3m2!1ses-419!2sar!4v1669078708350!5m2!1ses-419!2sar";
+const urlCivil = "https://goo.gl/maps/BgihWNTsjtpdbW678";
 
 let device = "desktop";
 
